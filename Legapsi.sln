@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_LEGASPI_CPE201", "Legapsi\OOP_LEGASPI_CPE201.csproj", "{736EB308-F4E8-42AC-B6EC-C7157FE8532E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{736EB308-F4E8-42AC-B6EC-C7157FE8532E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736EB308-F4E8-42AC-B6EC-C7157FE8532E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736EB308-F4E8-42AC-B6EC-C7157FE8532E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736EB308-F4E8-42AC-B6EC-C7157FE8532E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1D82852-D341-4FCE-B80A-5D26AD182227}
+	EndGlobalSection
+EndGlobal
