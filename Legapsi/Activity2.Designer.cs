@@ -1058,7 +1058,7 @@
             label1.TabIndex = 85;
             label1.Text = "Pizza ni Karlo Legaspi";
             // 
-            // Form1
+            // Activity2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -1091,7 +1091,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "Activity2";
             Text = "Form1";
             Load += Form1_Load;
             groupBox4.ResumeLayout(false);

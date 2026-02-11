@@ -98,6 +98,15 @@
             label32 = new Label();
             textBox24 = new TextBox();
             label33 = new Label();
+            label34 = new Label();
+            label36 = new Label();
+            textBox25 = new TextBox();
+            textBox26 = new TextBox();
+            label35 = new Label();
+            textBox27 = new TextBox();
+            label37 = new Label();
+            label38 = new Label();
+            textBox28 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -690,12 +699,94 @@
             label33.TabIndex = 69;
             label33.Text = "Total Tuition and fee:";
             // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Location = new Point(4, 681);
+            label34.Name = "label34";
+            label34.Size = new Size(105, 15);
+            label34.TabIndex = 71;
+            label34.Text = "Other School Fees:";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Location = new Point(4, 709);
+            label36.Name = "label36";
+            label36.Size = new Size(147, 15);
+            label36.TabIndex = 72;
+            label36.Text = "Computer Laboratorty fee:";
+            // 
+            // textBox25
+            // 
+            textBox25.Location = new Point(157, 706);
+            textBox25.Name = "textBox25";
+            textBox25.Size = new Size(179, 23);
+            textBox25.TabIndex = 73;
+            // 
+            // textBox26
+            // 
+            textBox26.Location = new Point(157, 735);
+            textBox26.Name = "textBox26";
+            textBox26.Size = new Size(179, 23);
+            textBox26.TabIndex = 75;
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Location = new Point(4, 738);
+            label35.Name = "label35";
+            label35.Size = new Size(87, 15);
+            label35.TabIndex = 74;
+            label35.Text = "CISCO Lab Fee:";
+            // 
+            // textBox27
+            // 
+            textBox27.Location = new Point(157, 764);
+            textBox27.Name = "textBox27";
+            textBox27.Size = new Size(179, 23);
+            textBox27.TabIndex = 77;
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Location = new Point(4, 767);
+            label37.Name = "label37";
+            label37.Size = new Size(82, 15);
+            label37.TabIndex = 76;
+            label37.Text = "Exam Booklet:";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Location = new Point(6, 796);
+            label38.Name = "label38";
+            label38.Size = new Size(131, 15);
+            label38.TabIndex = 78;
+            label38.Text = "Total Other School fees:";
+            // 
+            // textBox28
+            // 
+            textBox28.Location = new Point(157, 793);
+            textBox28.Name = "textBox28";
+            textBox28.Size = new Size(179, 23);
+            textBox28.TabIndex = 79;
+            // 
             // Lesson2Act
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(1299, 821);
+            Controls.Add(textBox28);
+            Controls.Add(label38);
+            Controls.Add(textBox27);
+            Controls.Add(label37);
+            Controls.Add(textBox26);
+            Controls.Add(label35);
+            Controls.Add(textBox25);
+            Controls.Add(label36);
+            Controls.Add(label34);
             Controls.Add(textBox24);
             Controls.Add(label33);
             Controls.Add(textBox23);
@@ -845,5 +936,14 @@
         private Label label32;
         private TextBox textBox24;
         private Label label33;
+        private Label label34;
+        private Label label36;
+        private TextBox textBox25;
+        private TextBox textBox26;
+        private Label label35;
+        private TextBox textBox27;
+        private Label label37;
+        private Label label38;
+        private TextBox textBox28;
     }
 }
