@@ -30,49 +30,48 @@
         {
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            name = new TextBox();
             label2 = new Label();
-            textBox3 = new TextBox();
+            year_level = new TextBox();
             label3 = new Label();
-            textBox4 = new TextBox();
+            student_num = new TextBox();
             label4 = new Label();
             label5 = new Label();
-            textBox6 = new TextBox();
+            scholar = new TextBox();
             label6 = new Label();
             dateTimePicker1 = new DateTimePicker();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            textBox5 = new TextBox();
+            unit_lec = new TextBox();
             label7 = new Label();
-            textBox7 = new TextBox();
+            course_disc = new TextBox();
             label8 = new Label();
-            textBox8 = new TextBox();
+            course_code = new TextBox();
             label9 = new Label();
-            textBox9 = new TextBox();
+            student_name = new TextBox();
             label10 = new Label();
-            textBox10 = new TextBox();
+            time = new TextBox();
             label11 = new Label();
-            textBox11 = new TextBox();
+            unit_lab = new TextBox();
             label12 = new Label();
-            textBox12 = new TextBox();
+            day = new TextBox();
             label13 = new Label();
-            textBox13 = new TextBox();
+            exam_booklet = new TextBox();
             label14 = new Label();
-            textBox14 = new TextBox();
+            cisco_lab = new TextBox();
             label15 = new Label();
-            textBox15 = new TextBox();
+            total_misc = new TextBox();
             label16 = new Label();
-            textBox16 = new TextBox();
+            totaltuition_fee = new TextBox();
             label17 = new Label();
-            textBox17 = new TextBox();
+            lab_fee = new TextBox();
             label18 = new Label();
-            textBox18 = new TextBox();
+            totalnum_unit = new TextBox();
             label19 = new Label();
-            textBox19 = new TextBox();
+            cred_unit = new TextBox();
             label20 = new Label();
-            textBox20 = new TextBox();
+            total_tuitionandfee = new TextBox();
             label21 = new Label();
             listBox1 = new ListBox();
             listBox2 = new ListBox();
@@ -90,23 +89,25 @@
             label27 = new Label();
             label28 = new Label();
             label29 = new Label();
-            textBox21 = new TextBox();
+            final_misc = new TextBox();
             label30 = new Label();
-            textBox22 = new TextBox();
+            total_tuitionfee = new TextBox();
             label31 = new Label();
-            textBox23 = new TextBox();
+            final_numunit = new TextBox();
             label32 = new Label();
-            textBox24 = new TextBox();
+            final_tuitionandfee = new TextBox();
             label33 = new Label();
             label34 = new Label();
             label36 = new Label();
-            textBox25 = new TextBox();
-            textBox26 = new TextBox();
+            final_lab = new TextBox();
+            final_cisc = new TextBox();
             label35 = new Label();
-            textBox27 = new TextBox();
+            final_exam = new TextBox();
             label37 = new Label();
             label38 = new Label();
-            textBox28 = new TextBox();
+            final_other = new TextBox();
+            openFileDialog1 = new OpenFileDialog();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -129,19 +130,12 @@
             label1.Text = "Student Name:";
             label1.Click += label1_Click;
             // 
-            // textBox1
+            // name
             // 
-            textBox1.Location = new Point(294, 12);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(200, 23);
-            textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(294, 41);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(200, 23);
-            textBox2.TabIndex = 4;
+            name.Location = new Point(294, 12);
+            name.Name = "name";
+            name.Size = new Size(200, 23);
+            name.TabIndex = 2;
             // 
             // label2
             // 
@@ -152,12 +146,12 @@
             label2.TabIndex = 3;
             label2.Text = "Programs:";
             // 
-            // textBox3
+            // year_level
             // 
-            textBox3.Location = new Point(294, 99);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(200, 23);
-            textBox3.TabIndex = 8;
+            year_level.Location = new Point(294, 99);
+            year_level.Name = "year_level";
+            year_level.Size = new Size(200, 23);
+            year_level.TabIndex = 8;
             // 
             // label3
             // 
@@ -168,12 +162,12 @@
             label3.TabIndex = 7;
             label3.Text = "Year level:";
             // 
-            // textBox4
+            // student_num
             // 
-            textBox4.Location = new Point(294, 70);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(200, 23);
-            textBox4.TabIndex = 6;
+            student_num.Location = new Point(294, 70);
+            student_num.Name = "student_num";
+            student_num.Size = new Size(200, 23);
+            student_num.TabIndex = 6;
             // 
             // label4
             // 
@@ -193,12 +187,12 @@
             label5.TabIndex = 9;
             label5.Text = "Date Enrolled:";
             // 
-            // textBox6
+            // scholar
             // 
-            textBox6.Location = new Point(294, 157);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(200, 23);
-            textBox6.TabIndex = 12;
+            scholar.Location = new Point(294, 157);
+            scholar.Name = "scholar";
+            scholar.Size = new Size(200, 23);
+            scholar.TabIndex = 12;
             // 
             // label6
             // 
@@ -234,6 +228,7 @@
             button2.TabIndex = 15;
             button2.Text = "Submit";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -243,13 +238,14 @@
             button3.TabIndex = 16;
             button3.Text = "New / Cancel";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
-            // textBox5
+            // unit_lec
             // 
-            textBox5.Location = new Point(110, 291);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(200, 23);
-            textBox5.TabIndex = 24;
+            unit_lec.Location = new Point(110, 291);
+            unit_lec.Name = "unit_lec";
+            unit_lec.Size = new Size(200, 23);
+            unit_lec.TabIndex = 24;
             // 
             // label7
             // 
@@ -260,12 +256,12 @@
             label7.TabIndex = 23;
             label7.Text = "Unit Lecture:";
             // 
-            // textBox7
+            // course_disc
             // 
-            textBox7.Location = new Point(110, 262);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(200, 23);
-            textBox7.TabIndex = 22;
+            course_disc.Location = new Point(110, 262);
+            course_disc.Name = "course_disc";
+            course_disc.Size = new Size(200, 23);
+            course_disc.TabIndex = 22;
             // 
             // label8
             // 
@@ -276,12 +272,12 @@
             label8.TabIndex = 21;
             label8.Text = "Course Desc:";
             // 
-            // textBox8
+            // course_code
             // 
-            textBox8.Location = new Point(110, 233);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(200, 23);
-            textBox8.TabIndex = 20;
+            course_code.Location = new Point(110, 233);
+            course_code.Name = "course_code";
+            course_code.Size = new Size(200, 23);
+            course_code.TabIndex = 20;
             // 
             // label9
             // 
@@ -292,12 +288,12 @@
             label9.TabIndex = 19;
             label9.Text = "Course Code:";
             // 
-            // textBox9
+            // student_name
             // 
-            textBox9.Location = new Point(110, 204);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(200, 23);
-            textBox9.TabIndex = 18;
+            student_name.Location = new Point(110, 204);
+            student_name.Name = "student_name";
+            student_name.Size = new Size(200, 23);
+            student_name.TabIndex = 18;
             // 
             // label10
             // 
@@ -308,13 +304,13 @@
             label10.TabIndex = 17;
             label10.Text = "Course Number:";
             // 
-            // textBox10
+            // time
             // 
-            textBox10.Location = new Point(110, 349);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(200, 23);
-            textBox10.TabIndex = 28;
-            textBox10.TextChanged += textBox10_TextChanged;
+            time.Location = new Point(110, 349);
+            time.Name = "time";
+            time.Size = new Size(200, 23);
+            time.TabIndex = 28;
+            time.TextChanged += textBox10_TextChanged;
             // 
             // label11
             // 
@@ -325,12 +321,12 @@
             label11.TabIndex = 27;
             label11.Text = "Time:";
             // 
-            // textBox11
+            // unit_lab
             // 
-            textBox11.Location = new Point(110, 320);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(200, 23);
-            textBox11.TabIndex = 26;
+            unit_lab.Location = new Point(110, 320);
+            unit_lab.Name = "unit_lab";
+            unit_lab.Size = new Size(200, 23);
+            unit_lab.TabIndex = 26;
             // 
             // label12
             // 
@@ -342,12 +338,12 @@
             label12.Text = "Unit Laboratory:";
             label12.Click += label12_Click;
             // 
-            // textBox12
+            // day
             // 
-            textBox12.Location = new Point(110, 378);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(200, 23);
-            textBox12.TabIndex = 30;
+            day.Location = new Point(110, 378);
+            day.Name = "day";
+            day.Size = new Size(200, 23);
+            day.TabIndex = 30;
             // 
             // label13
             // 
@@ -358,12 +354,12 @@
             label13.TabIndex = 29;
             label13.Text = "Day:";
             // 
-            // textBox13
+            // exam_booklet
             // 
-            textBox13.Location = new Point(480, 366);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(200, 23);
-            textBox13.TabIndex = 44;
+            exam_booklet.Location = new Point(480, 366);
+            exam_booklet.Name = "exam_booklet";
+            exam_booklet.Size = new Size(200, 23);
+            exam_booklet.TabIndex = 44;
             // 
             // label14
             // 
@@ -374,12 +370,12 @@
             label14.TabIndex = 43;
             label14.Text = "Exam Booklet Fee";
             // 
-            // textBox14
+            // cisco_lab
             // 
-            textBox14.Location = new Point(480, 337);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(200, 23);
-            textBox14.TabIndex = 42;
+            cisco_lab.Location = new Point(480, 337);
+            cisco_lab.Name = "cisco_lab";
+            cisco_lab.Size = new Size(200, 23);
+            cisco_lab.TabIndex = 42;
             // 
             // label15
             // 
@@ -390,12 +386,12 @@
             label15.TabIndex = 41;
             label15.Text = "Cisco Lab Fee:";
             // 
-            // textBox15
+            // total_misc
             // 
-            textBox15.Location = new Point(480, 308);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(200, 23);
-            textBox15.TabIndex = 40;
+            total_misc.Location = new Point(480, 308);
+            total_misc.Name = "total_misc";
+            total_misc.Size = new Size(200, 23);
+            total_misc.TabIndex = 40;
             // 
             // label16
             // 
@@ -406,12 +402,12 @@
             label16.TabIndex = 39;
             label16.Text = "Total Miscellanous fee:";
             // 
-            // textBox16
+            // totaltuition_fee
             // 
-            textBox16.Location = new Point(480, 279);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(200, 23);
-            textBox16.TabIndex = 38;
+            totaltuition_fee.Location = new Point(480, 279);
+            totaltuition_fee.Name = "totaltuition_fee";
+            totaltuition_fee.Size = new Size(200, 23);
+            totaltuition_fee.TabIndex = 38;
             // 
             // label17
             // 
@@ -422,12 +418,12 @@
             label17.TabIndex = 37;
             label17.Text = "Total Tuition Fee:";
             // 
-            // textBox17
+            // lab_fee
             // 
-            textBox17.Location = new Point(480, 250);
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(200, 23);
-            textBox17.TabIndex = 36;
+            lab_fee.Location = new Point(480, 250);
+            lab_fee.Name = "lab_fee";
+            lab_fee.Size = new Size(200, 23);
+            lab_fee.TabIndex = 36;
             // 
             // label18
             // 
@@ -438,13 +434,13 @@
             label18.TabIndex = 35;
             label18.Text = "Laboratory Fee:";
             // 
-            // textBox18
+            // totalnum_unit
             // 
-            textBox18.Location = new Point(480, 221);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(200, 23);
-            textBox18.TabIndex = 34;
-            textBox18.TextChanged += textBox18_TextChanged;
+            totalnum_unit.Location = new Point(480, 221);
+            totalnum_unit.Name = "totalnum_unit";
+            totalnum_unit.Size = new Size(200, 23);
+            totalnum_unit.TabIndex = 34;
+            totalnum_unit.TextChanged += textBox18_TextChanged;
             // 
             // label19
             // 
@@ -455,12 +451,12 @@
             label19.TabIndex = 33;
             label19.Text = "Total Number of Units:";
             // 
-            // textBox19
+            // cred_unit
             // 
-            textBox19.Location = new Point(480, 192);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(200, 23);
-            textBox19.TabIndex = 32;
+            cred_unit.Location = new Point(480, 192);
+            cred_unit.Name = "cred_unit";
+            cred_unit.Size = new Size(200, 23);
+            cred_unit.TabIndex = 32;
             // 
             // label20
             // 
@@ -471,12 +467,12 @@
             label20.TabIndex = 31;
             label20.Text = "Credit Unit:";
             // 
-            // textBox20
+            // total_tuitionandfee
             // 
-            textBox20.Location = new Point(480, 395);
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(200, 23);
-            textBox20.TabIndex = 46;
+            total_tuitionandfee.Location = new Point(480, 395);
+            total_tuitionandfee.Name = "total_tuitionandfee";
+            total_tuitionandfee.Size = new Size(200, 23);
+            total_tuitionandfee.TabIndex = 46;
             // 
             // label21
             // 
@@ -635,12 +631,12 @@
             label29.TabIndex = 62;
             label29.Text = "Day:";
             // 
-            // textBox21
+            // final_misc
             // 
-            textBox21.Location = new Point(136, 643);
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(200, 23);
-            textBox21.TabIndex = 66;
+            final_misc.Location = new Point(136, 643);
+            final_misc.Name = "final_misc";
+            final_misc.Size = new Size(200, 23);
+            final_misc.TabIndex = 66;
             // 
             // label30
             // 
@@ -651,12 +647,12 @@
             label30.TabIndex = 65;
             label30.Text = "Total Miscellanous fee:";
             // 
-            // textBox22
+            // total_tuitionfee
             // 
-            textBox22.Location = new Point(136, 614);
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(200, 23);
-            textBox22.TabIndex = 64;
+            total_tuitionfee.Location = new Point(136, 614);
+            total_tuitionfee.Name = "total_tuitionfee";
+            total_tuitionfee.Size = new Size(200, 23);
+            total_tuitionfee.TabIndex = 64;
             // 
             // label31
             // 
@@ -667,12 +663,12 @@
             label31.TabIndex = 63;
             label31.Text = "Total Tuiton Fee:";
             // 
-            // textBox23
+            // final_numunit
             // 
-            textBox23.Location = new Point(480, 614);
-            textBox23.Name = "textBox23";
-            textBox23.Size = new Size(200, 23);
-            textBox23.TabIndex = 68;
+            final_numunit.Location = new Point(480, 614);
+            final_numunit.Name = "final_numunit";
+            final_numunit.Size = new Size(200, 23);
+            final_numunit.TabIndex = 68;
             // 
             // label32
             // 
@@ -683,12 +679,12 @@
             label32.TabIndex = 67;
             label32.Text = "Total Number of Units:";
             // 
-            // textBox24
+            // final_tuitionandfee
             // 
-            textBox24.Location = new Point(480, 643);
-            textBox24.Name = "textBox24";
-            textBox24.Size = new Size(200, 23);
-            textBox24.TabIndex = 70;
+            final_tuitionandfee.Location = new Point(480, 643);
+            final_tuitionandfee.Name = "final_tuitionandfee";
+            final_tuitionandfee.Size = new Size(200, 23);
+            final_tuitionandfee.TabIndex = 70;
             // 
             // label33
             // 
@@ -717,19 +713,19 @@
             label36.TabIndex = 72;
             label36.Text = "Computer Laboratorty fee:";
             // 
-            // textBox25
+            // final_lab
             // 
-            textBox25.Location = new Point(157, 706);
-            textBox25.Name = "textBox25";
-            textBox25.Size = new Size(179, 23);
-            textBox25.TabIndex = 73;
+            final_lab.Location = new Point(157, 706);
+            final_lab.Name = "final_lab";
+            final_lab.Size = new Size(179, 23);
+            final_lab.TabIndex = 73;
             // 
-            // textBox26
+            // final_cisc
             // 
-            textBox26.Location = new Point(157, 735);
-            textBox26.Name = "textBox26";
-            textBox26.Size = new Size(179, 23);
-            textBox26.TabIndex = 75;
+            final_cisc.Location = new Point(157, 735);
+            final_cisc.Name = "final_cisc";
+            final_cisc.Size = new Size(179, 23);
+            final_cisc.TabIndex = 75;
             // 
             // label35
             // 
@@ -740,12 +736,12 @@
             label35.TabIndex = 74;
             label35.Text = "CISCO Lab Fee:";
             // 
-            // textBox27
+            // final_exam
             // 
-            textBox27.Location = new Point(157, 764);
-            textBox27.Name = "textBox27";
-            textBox27.Size = new Size(179, 23);
-            textBox27.TabIndex = 77;
+            final_exam.Location = new Point(157, 764);
+            final_exam.Name = "final_exam";
+            final_exam.Size = new Size(179, 23);
+            final_exam.TabIndex = 77;
             // 
             // label37
             // 
@@ -765,12 +761,24 @@
             label38.TabIndex = 78;
             label38.Text = "Total Other School fees:";
             // 
-            // textBox28
+            // final_other
             // 
-            textBox28.Location = new Point(157, 793);
-            textBox28.Name = "textBox28";
-            textBox28.Size = new Size(179, 23);
-            textBox28.TabIndex = 79;
+            final_other.Location = new Point(157, 793);
+            final_other.Name = "final_other";
+            final_other.Size = new Size(179, 23);
+            final_other.TabIndex = 79;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(294, 41);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(200, 23);
+            comboBox1.TabIndex = 80;
             // 
             // Lesson2Act
             // 
@@ -778,22 +786,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(1299, 821);
-            Controls.Add(textBox28);
+            Controls.Add(comboBox1);
+            Controls.Add(final_other);
             Controls.Add(label38);
-            Controls.Add(textBox27);
+            Controls.Add(final_exam);
             Controls.Add(label37);
-            Controls.Add(textBox26);
+            Controls.Add(final_cisc);
             Controls.Add(label35);
-            Controls.Add(textBox25);
+            Controls.Add(final_lab);
             Controls.Add(label36);
             Controls.Add(label34);
-            Controls.Add(textBox24);
+            Controls.Add(final_tuitionandfee);
             Controls.Add(label33);
-            Controls.Add(textBox23);
+            Controls.Add(final_numunit);
             Controls.Add(label32);
-            Controls.Add(textBox21);
+            Controls.Add(final_misc);
             Controls.Add(label30);
-            Controls.Add(textBox22);
+            Controls.Add(total_tuitionfee);
             Controls.Add(label31);
             Controls.Add(label29);
             Controls.Add(label28);
@@ -811,54 +820,54 @@
             Controls.Add(listBox3);
             Controls.Add(listBox2);
             Controls.Add(listBox1);
-            Controls.Add(textBox20);
+            Controls.Add(total_tuitionandfee);
             Controls.Add(label21);
-            Controls.Add(textBox13);
+            Controls.Add(exam_booklet);
             Controls.Add(label14);
-            Controls.Add(textBox14);
+            Controls.Add(cisco_lab);
             Controls.Add(label15);
-            Controls.Add(textBox15);
+            Controls.Add(total_misc);
             Controls.Add(label16);
-            Controls.Add(textBox16);
+            Controls.Add(totaltuition_fee);
             Controls.Add(label17);
-            Controls.Add(textBox17);
+            Controls.Add(lab_fee);
             Controls.Add(label18);
-            Controls.Add(textBox18);
+            Controls.Add(totalnum_unit);
             Controls.Add(label19);
-            Controls.Add(textBox19);
+            Controls.Add(cred_unit);
             Controls.Add(label20);
-            Controls.Add(textBox12);
+            Controls.Add(day);
             Controls.Add(label13);
-            Controls.Add(textBox10);
+            Controls.Add(time);
             Controls.Add(label11);
-            Controls.Add(textBox11);
+            Controls.Add(unit_lab);
             Controls.Add(label12);
-            Controls.Add(textBox5);
+            Controls.Add(unit_lec);
             Controls.Add(label7);
-            Controls.Add(textBox7);
+            Controls.Add(course_disc);
             Controls.Add(label8);
-            Controls.Add(textBox8);
+            Controls.Add(course_code);
             Controls.Add(label9);
-            Controls.Add(textBox9);
+            Controls.Add(student_name);
             Controls.Add(label10);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dateTimePicker1);
-            Controls.Add(textBox6);
+            Controls.Add(scholar);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(textBox3);
+            Controls.Add(year_level);
             Controls.Add(label3);
-            Controls.Add(textBox4);
+            Controls.Add(student_num);
             Controls.Add(label4);
-            Controls.Add(textBox2);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(name);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "Lesson2Act";
             Text = "Lesson2Act";
+            Load += Lesson2Act_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -868,49 +877,48 @@
 
         private PictureBox pictureBox1;
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox name;
         private Label label2;
-        private TextBox textBox3;
+        private TextBox year_level;
         private Label label3;
-        private TextBox textBox4;
+        private TextBox student_num;
         private Label label4;
         private Label label5;
-        private TextBox textBox6;
+        private TextBox scholar;
         private Label label6;
         private DateTimePicker dateTimePicker1;
         private Button button1;
         private Button button2;
         private Button button3;
-        private TextBox textBox5;
+        private TextBox unit_lec;
         private Label label7;
-        private TextBox textBox7;
+        private TextBox course_disc;
         private Label label8;
-        private TextBox textBox8;
+        private TextBox course_code;
         private Label label9;
-        private TextBox textBox9;
+        private TextBox student_name;
         private Label label10;
-        private TextBox textBox10;
+        private TextBox time;
         private Label label11;
-        private TextBox textBox11;
+        private TextBox unit_lab;
         private Label label12;
-        private TextBox textBox12;
+        private TextBox day;
         private Label label13;
-        private TextBox textBox13;
+        private TextBox exam_booklet;
         private Label label14;
-        private TextBox textBox14;
+        private TextBox cisco_lab;
         private Label label15;
-        private TextBox textBox15;
+        private TextBox total_misc;
         private Label label16;
-        private TextBox textBox16;
+        private TextBox totaltuition_fee;
         private Label label17;
-        private TextBox textBox17;
+        private TextBox lab_fee;
         private Label label18;
-        private TextBox textBox18;
+        private TextBox totalnum_unit;
         private Label label19;
-        private TextBox textBox19;
+        private TextBox cred_unit;
         private Label label20;
-        private TextBox textBox20;
+        private TextBox total_tuitionandfee;
         private Label label21;
         private ListBox listBox1;
         private ListBox listBox2;
@@ -928,22 +936,24 @@
         private Label label27;
         private Label label28;
         private Label label29;
-        private TextBox textBox21;
+        private TextBox final_misc;
         private Label label30;
-        private TextBox textBox22;
+        private TextBox total_tuitionfee;
         private Label label31;
-        private TextBox textBox23;
+        private TextBox final_numunit;
         private Label label32;
-        private TextBox textBox24;
+        private TextBox final_tuitionandfee;
         private Label label33;
         private Label label34;
         private Label label36;
-        private TextBox textBox25;
-        private TextBox textBox26;
+        private TextBox final_lab;
+        private TextBox final_cisc;
         private Label label35;
-        private TextBox textBox27;
+        private TextBox final_exam;
         private Label label37;
         private Label label38;
-        private TextBox textBox28;
+        private TextBox final_other;
+        private OpenFileDialog openFileDialog1;
+        private ComboBox comboBox1;
     }
 }
