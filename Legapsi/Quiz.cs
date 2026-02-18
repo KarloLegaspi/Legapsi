@@ -13,6 +13,11 @@ namespace OOP_LEGASPI_CPE201
 {
     public partial class Quiz : Form
     {
+        private object CompLabFee;
+        private object SAPFee;
+        private object CISCOLabFee;
+        private object ExamBookletFee;
+
         public Quiz()
         {
             InitializeComponent();
