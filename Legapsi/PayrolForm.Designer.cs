@@ -293,8 +293,10 @@
             pictureBox2.Location = new Point(649, 7);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(174, 151);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 25;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // groupBox1
             // 
@@ -336,6 +338,7 @@
             basic_netincomeTxtbox.Name = "basic_netincomeTxtbox";
             basic_netincomeTxtbox.Size = new Size(220, 23);
             basic_netincomeTxtbox.TabIndex = 31;
+            basic_netincomeTxtbox.TextChanged += basic_netincomeTxtbox_TextChanged;
             // 
             // basic_rateTxtbox
             // 

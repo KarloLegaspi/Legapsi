@@ -12,6 +12,8 @@ namespace OOP_LEGASPI_CPE201
 {
     public partial class PayrolForm : Form
     {
+
+        private bool isClearing = false;
         private string picpath;
         private Double basic_netincome = 0.00,
             basic_numhrs = 0.00,
@@ -37,7 +39,6 @@ namespace OOP_LEGASPI_CPE201
         private double total_loan;
         private double total_deduction;
         private double netincome;
-        private object priDisplayListBox;
 
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
         public PayrolForm()
@@ -116,18 +117,16 @@ namespace OOP_LEGASPI_CPE201
 
         private void button5_Click(object sender, EventArgs e)
         {
-            // codes for calling the other form connected to the current form print1 = new Assignment_Payroll PrintFrm();
-            PayrolForm print1 = new PayrolForm();
-            // codes for displaying the contents of the list box from other form to the current form
             PayrolPrint printForm = new PayrolPrint();
-            // Ensure priDisplayListBox is a ListBox, and both controls are accessible
-            print1.priDisplayListBox.Items.AddRange(this.payslip_viewListBox.Items.OfType<object>().ToArray());
 
-            print1.Show();
-            //code for displaying the other form
-            print1.Show();
+            printForm.priDisplayListbox.Items.AddRange(
+                payslip_viewListBox.Items.Cast<object>().ToArray()
+            );
+
+            printForm.Show();
         }
-        
+
+
         private void basic_rateTxtbox_TextChanged(object sender, EventArgs e)
         {
 
@@ -135,54 +134,68 @@ namespace OOP_LEGASPI_CPE201
 
         private void basic_numhrsTxtbox_TextChanged(object sender, EventArgs e)
         {
-            basic_numhrs = Double.Parse(basic_numhrsTxtbox.Text);
-            basic_rate = Convert.ToDouble(basic_rateTxtbox.Text);
+            if (isClearing) return;
+
+            double.TryParse(basic_numhrsTxtbox.Text, out basic_numhrs);
+            double.TryParse(basic_rateTxtbox.Text, out basic_rate);
+
             basic_netincome = basic_numhrs * basic_rate;
-            basic_netincomeTxtbox.Text = basic_netincome.ToString("n");
+            basic_netincomeTxtbox.Text = basic_netincome.ToString("0.00");
+
+            ComputeGrossIncome();
         }
 
         private void hono_numhrsTxtbox_TextChanged(object sender, EventArgs e)
         {
-            hono_numhrs = Convert.ToDouble(hono_numhrsTxtbox.Text);
-            hono_rate = Convert.ToDouble(hono_rateTxtbox.Text);
+            if (isClearing) return;
+
+            double.TryParse(hono_numhrsTxtbox.Text, out hono_numhrs);
+            double.TryParse(hono_rateTxtbox.Text, out hono_rate);
+
             hono_netincome = hono_numhrs * hono_rate;
-            hono_netincomeTxtbox.Text = hono_netincome.ToString("n");
+            hono_netincomeTxtbox.Text = hono_netincome.ToString("0.00");
+
+            ComputeGrossIncome();
         }
 
         private void other_numhrsTxtbox_TextChanged(object sender, EventArgs e)
         {
-            other_numhrs = Convert.ToDouble(other_numhrsTxtbox.Text);
-            other_rate = Convert.ToDouble(other_rateTxtbox.Text);
+            if (isClearing) return;
+
+            double.TryParse(other_numhrsTxtbox.Text, out other_numhrs);
+            double.TryParse(other_rateTxtbox.Text, out other_rate);
+
             other_netincome = other_numhrs * other_rate;
-            other_netincomeTxtbox.Text = other_netincome.ToString("n");
-            grossincome = basic_netincome + hono_netincome + other_netincome;
-            gross_incomeTxtbox.Text = grossincome.ToString("n");
+            other_netincomeTxtbox.Text = other_netincome.ToString("0.00");
+
+            ComputeGrossIncome();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // codes for converting input data from textbox as string to numeric
-            // codes for putting data from textbox to variables
-            sss_contrib = Convert.ToDouble(sss_contribTxtbox.Text);
-            pagibig_contrib = Convert.ToDouble(pagibig_contribTxtbox.Text);
-            philhealth_contrib = Convert.ToDouble(philhealth_contribTxtbox.Text);
-            tax_contrib = Convert.ToDouble(tax_contribTxtbox.Text);
-            sss_loan = Convert.ToDouble(sss_loanTxtbox.Text);
-            pagibig_loan = Convert.ToDouble(pagibig_loanTxtbox.Text);
-            salay_loan = Convert.ToDouble(sal_loanTxtbox.Text);
-            faculty_sav_loan = Convert.ToDouble(FS_loanTxtbox.Text);
-            salary_savings = Convert.ToDouble(FSD_depositTxtbox.Text);
-            other_deduction = Convert.ToDouble(otherLoanTxtbox.Text);
 
-            // dormula to compute the desired data to be computed
+            if (isClearing) return;
+
+            double.TryParse(sss_contribTxtbox.Text, out sss_contrib);
+            double.TryParse(pagibig_contribTxtbox.Text, out pagibig_contrib);
+            double.TryParse(philhealth_contribTxtbox.Text, out philhealth_contrib);
+            double.TryParse(tax_contribTxtbox.Text, out tax_contrib);
+
+            double.TryParse(sss_loanTxtbox.Text, out sss_loan);
+            double.TryParse(pagibig_loanTxtbox.Text, out pagibig_loan);
+            double.TryParse(sal_loanTxtbox.Text, out salay_loan);
+            double.TryParse(FS_loanTxtbox.Text, out faculty_sav_loan);
+            double.TryParse(FSD_depositTxtbox.Text, out salary_savings);
+            double.TryParse(otherLoanTxtbox.Text, out other_deduction);
+
             total_contrib = sss_contrib + pagibig_contrib + philhealth_contrib + tax_contrib;
             total_loan = sss_loan + pagibig_loan + salay_loan + faculty_sav_loan + other_deduction;
             total_deduction = total_contrib + total_loan;
 
-            // codes for converting numeric data to string and displayed it inside the text boxes
-            total_deducTxtbox.Text = total_deduction.ToString("n");
+            total_deducTxtbox.Text = total_deduction.ToString("N2");
+
             netincome = grossincome - total_deduction;
-            net_incomeTxtbox.Text = netincome.ToString("n");
+            net_incomeTxtbox.Text = netincome.ToString("N2");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -193,58 +206,17 @@ namespace OOP_LEGASPI_CPE201
             surTxtbox.Clear();
             civil_statusTxtbox.Clear();
             desigTxtbox.Clear();
-            desigTxtbox.Clear();
             numDependentTxtbox.Clear();
             empStatusTxtbox.Clear();
             DeptNameTxtbox.Clear();
-            basic_netincomeTxtbox.Clear();
-            basic_numhrsTxtbox.Clear();
-            basic_rateTxtbox.Clear();
-            hono_netincomeTxtbox.Clear();
-            hono_numhrsTxtbox.Clear();
-            hono_rateTxtbox.Clear();
-            other_netincomeTxtbox.Clear();
-            other_numhrsTxtbox.Clear();
-            other_rateTxtbox.Clear();
-            net_incomeTxtbox.Clear();
-            gross_incomeTxtbox.Clear();
-            sss_contribTxtbox.Clear();
-            pagibig_contribTxtbox.Clear();
-            philhealth_contribTxtbox.Clear();
-            tax_contribTxtbox.Clear();
-            sss_loanTxtbox.Clear();
-            pagibig_loanTxtbox.Clear();
+
+
+            ClearForm();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            emp_nuTxtbox.Clear();
-            firstnameTxtbox.Clear();
-            MNameTxtbox.Clear();
-            surTxtbox.Clear();
-            civil_statusTxtbox.Clear();
-            desigTxtbox.Clear();
-            desigTxtbox.Clear();
-            numDependentTxtbox.Clear();
-            empStatusTxtbox.Clear();
-            DeptNameTxtbox.Clear();
-            basic_netincomeTxtbox.Clear();
-            basic_numhrsTxtbox.Clear();
-            basic_rateTxtbox.Clear();
-            hono_netincomeTxtbox.Clear();
-            hono_numhrsTxtbox.Clear();
-            hono_rateTxtbox.Clear();
-            other_netincomeTxtbox.Clear();
-            other_numhrsTxtbox.Clear();
-            other_rateTxtbox.Clear();
-            net_incomeTxtbox.Clear();
-            gross_incomeTxtbox.Clear();
-            sss_contribTxtbox.Clear();
-            pagibig_contribTxtbox.Clear();
-            philhealth_contribTxtbox.Clear();
-            tax_contribTxtbox.Clear();
-            sss_loanTxtbox.Clear();
-            pagibig_loanTxtbox.Clear();
+            ClearForm();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -300,6 +272,52 @@ namespace OOP_LEGASPI_CPE201
         private void groupBox8_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void ClearForm()
+        {
+            isClearing = true;
+
+            foreach (Control ctrl in this.Controls)
+                ClearTextBoxes(ctrl);
+
+            payslip_viewListBox.Items.Clear();
+
+            pictureBox2.Image = null;
+
+            gross_incomeTxtbox.Text = "0.00";
+            net_incomeTxtbox.Text = "0.00";
+            total_deducTxtbox.Text = "0.00";
+
+            isClearing = false;
+        }
+
+        private void ClearTextBoxes(Control parent)
+        {
+            foreach (Control ctrl in parent.Controls)
+            {
+                if (ctrl is TextBox)
+                    ((TextBox)ctrl).Clear();
+                else
+                    ClearTextBoxes(ctrl);
+            }
+        }
+
+        private void basic_netincomeTxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComputeGrossIncome()
+        {
+            grossincome = basic_netincome + hono_netincome + other_netincome;
+            gross_incomeTxtbox.Text = grossincome.ToString("N2");
         }
     }
 }

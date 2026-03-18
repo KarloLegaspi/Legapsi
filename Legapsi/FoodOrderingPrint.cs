@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace OOP_LEGASPI_CPE201
 {
-	public partial class Form1 : Form
-	{
-		public Form1()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class FoodOrderingPrint : Form
+    {
+        public FoodOrderingPrint()
+        {
+            InitializeComponent();
+        }
+
+        private void FoodOrderingPrint_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

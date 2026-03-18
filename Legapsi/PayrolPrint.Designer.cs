@@ -28,26 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            priDisplayListBox = new ListBox();
+            priDisplayListbox = new ListBox();
             SuspendLayout();
             // 
-            // priDisplayListBox
+            // priDisplayListbox
             // 
-            priDisplayListBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            priDisplayListBox.FormattingEnabled = true;
-            priDisplayListBox.ItemHeight = 15;
-            priDisplayListBox.Location = new Point(12, 12);
-            priDisplayListBox.Name = "priDisplayListBox";
-            priDisplayListBox.Size = new Size(428, 664);
-            priDisplayListBox.TabIndex = 1;
-            priDisplayListBox.SelectedIndexChanged += this.payslip_viewListBox_SelectedIndexChanged;
+            priDisplayListbox.FormattingEnabled = true;
+            priDisplayListbox.ItemHeight = 15;
+            priDisplayListbox.Location = new Point(40, 30);
+            priDisplayListbox.Name = "priDisplayListbox";
+            priDisplayListbox.Size = new Size(439, 559);
+            priDisplayListbox.TabIndex = 0;
+            priDisplayListbox.SelectedIndexChanged += priDisplayListbox_SelectedIndexChanged;
             // 
             // PayrolPrint
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1447, 677);
-            Controls.Add(priDisplayListBox);
+            ClientSize = new Size(1248, 647);
+            Controls.Add(priDisplayListbox);
             Name = "PayrolPrint";
             Text = "PayrolPrint";
             Load += PayrolPrint_Load;
@@ -56,6 +55,6 @@
 
         #endregion
 
-        public ListBox priDisplayListBox;
+        public ListBox priDisplayListbox;
     }
 }

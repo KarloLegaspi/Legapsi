@@ -102,6 +102,10 @@
             label11 = new Label();
             label10 = new Label();
             groupBox1 = new GroupBox();
+            radioButton4 = new RadioButton();
+            radioButton3 = new RadioButton();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
             button3 = new Button();
             button4 = new Button();
             button2 = new Button();
@@ -120,10 +124,6 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton4 = new RadioButton();
             groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
@@ -909,6 +909,51 @@
             groupBox1.TabIndex = 62;
             groupBox1.TabStop = false;
             // 
+            // radioButton4
+            // 
+            radioButton4.AutoSize = true;
+            radioButton4.Location = new Point(190, 133);
+            radioButton4.Name = "radioButton4";
+            radioButton4.Size = new Size(91, 19);
+            radioButton4.TabIndex = 25;
+            radioButton4.TabStop = true;
+            radioButton4.Text = "No Discount";
+            radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            radioButton3.AutoSize = true;
+            radioButton3.Location = new Point(190, 106);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(102, 19);
+            radioButton3.TabIndex = 24;
+            radioButton3.TabStop = true;
+            radioButton3.Text = "Employee Disc";
+            radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(190, 78);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(103, 19);
+            radioButton2.TabIndex = 23;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "With Disc Card";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(190, 48);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(97, 19);
+            radioButton1.TabIndex = 22;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Senior Citizen";
+            radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
+            // 
             // button3
             // 
             button3.BackColor = SystemColors.ActiveBorder;
@@ -1065,51 +1110,6 @@
             label1.Size = new Size(354, 30);
             label1.TabIndex = 58;
             label1.Text = "Pizza ni Karlo Legaspi";
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(190, 48);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(97, 19);
-            radioButton1.TabIndex = 22;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Senior Citizen";
-            radioButton1.UseVisualStyleBackColor = true;
-            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(190, 78);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(103, 19);
-            radioButton2.TabIndex = 23;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "With Disc Card";
-            radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(190, 106);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(102, 19);
-            radioButton3.TabIndex = 24;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Employee Disc";
-            radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(190, 133);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(91, 19);
-            radioButton4.TabIndex = 25;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "No Discount";
-            radioButton4.UseVisualStyleBackColor = true;
             // 
             // Activity3
             // 

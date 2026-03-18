@@ -12,23 +12,49 @@ namespace OOP_LEGASPI_CPE201
 {
     public partial class PayrolPrint : Form
     {
-        internal object priDisplayListBox;
+        //declaration of global variables
+        private string picpath;
+        private Double basic_netincome = 0.00,
+            basic_numhrs = 0.00,
+            basic_rate = 0.00,
+            hono_netincome = 0.00,
+            hono_numhrs = 0.00,
+            hono_rate = 0.00,
+            other_netincome = 0.00,
+            other_numhrs = 0.00,
+            other_rate = 0.00;
+        private Double netincome = 0.00,
+            grossincome = 0.00,
+            sss_contrib = 0.00,
+            pagibig_contrib = 0.00,
+            philhealth_contrib = 0.00,
+            tax_contrib = 0.00;
+        private Double sss_loan = 0.00,
+            pagibig_loan = 0.00,
+            salary_loan = 0.00,
+            salary_savings = 0.00,
+            faculty_sav_loan = 0.00,
+            other_deduction = 0.00,
+            total_deduction = 0.00,
+            total_contrib = 0.00,
+            total_loan = 0.00;
+        private ListBox listbox_printdisplay;
+        public ListBox priDisplayListBox;
 
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
         public PayrolPrint()
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
         {
             InitializeComponent();
+
+        }
+
+        private void priDisplayListbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void PayrolPrint_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void payslip_viewListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            
         }
     }
 }
