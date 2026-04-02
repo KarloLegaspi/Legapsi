@@ -41,12 +41,13 @@ namespace OOP_LEGASPI_CPE201
             Pepperoni_and_Cheese.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\PEPPERONI AND CHEESE PIZZA 18inches.png");
             Pepperoni_whole_pizza.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\PEPPERONI WHOLE PIZZA 18inches.jpg");
             Tropical_Hawaiian.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\TROPICAL HAWAIIAN WHOLE PIZZA 18inches.jpg");
-
+            //BUNDLE_A
             A_CokeCheckBox.Enabled = false;
             A_FriedChickencheckBox.Enabled = false;
             A_FriescheckBox.Enabled = false;
             A_sideDishCheckBox.Enabled = false;
             A_SpecialPizaCheckbox.Enabled = false;
+            //BUNDLE_B
             B_carbonaracheckBox.Enabled = false;
             B_ChickencheckBox.Enabled = false;
             B_FriescheckBox.Enabled = false;
@@ -57,6 +58,12 @@ namespace OOP_LEGASPI_CPE201
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            DisplayListbox.Items.Clear();
+            if (foodARdbtn.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.BUNDLE_A;
+            }
+            
             double price;
             this.BackColor = Color.LightCyan;
             foodBRdbtn.Checked = false;
@@ -88,6 +95,12 @@ namespace OOP_LEGASPI_CPE201
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            DisplayListbox.Items.Clear();
+            if (foodBRdbtn.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.BUNDLE_B;
+            }
+
             this.BackColor = Color.LightBlue;
             foodARdbtn.Checked = false;
             DisplayPictureBox.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\Food Bundle B.png");
@@ -115,16 +128,24 @@ namespace OOP_LEGASPI_CPE201
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double cash_given, change, total_amountPaid;
-            cash_given = Convert.ToDouble(cashGivenTxtbox.Text);
-            total_amountPaid = Convert.ToDouble(totalBillsTxtbox.Text);
-            change = cash_given - total_amountPaid;
-            changeTxtbox.Text = change.ToString("n");
-            DisplayListbox.Items.Add("Total Bills: " + "" + totalBillsTxtbox.Text);
-            DisplayListbox.Items.Add("Cash Given: " + "" + cashGivenTxtbox.Text);
-            DisplayListbox.Items.Add("Change: " + "" + changeTxtbox.Text);
-            DisplayListbox.Items.Add("Total No. of Items: " + "" + totalQtyTxtbox.Text);
-
+            try
+            {
+                double cash_given, change, total_amountPaid;
+                cash_given = Convert.ToDouble(cashGivenTxtbox.Text);
+                total_amountPaid = Convert.ToDouble(totalBillsTxtbox.Text);
+                change = cash_given - total_amountPaid;
+                changeTxtbox.Text = change.ToString("n");
+                DisplayListbox.Items.Add("Total Bills: " + "" + totalBillsTxtbox.Text);
+                DisplayListbox.Items.Add("Cash Given: " + "" + cashGivenTxtbox.Text);
+                DisplayListbox.Items.Add("Change: " + "" + changeTxtbox.Text);
+                DisplayListbox.Items.Add("Total No. of Items: " + "" + totalQtyTxtbox.Text);
+            }
+            catch (Exception)
+			{
+				MessageBox.Show("Enter Amount in cash given!");
+				cashGivenTxtbox.Clear();
+				cashGivenTxtbox.Focus();
+            }
 
 
         }
@@ -156,7 +177,7 @@ namespace OOP_LEGASPI_CPE201
 
             }
         }
-       
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -192,25 +213,36 @@ namespace OOP_LEGASPI_CPE201
 
         private void qtyTxtbox_TextChanged(object sender, EventArgs e)
         {
-            if (double.TryParse(priceTxtBox.Text, out double price) &&
+            try
+            {
+                if (double.TryParse(priceTxtBox.Text, out double price) &&
         int.TryParse(qtyTxtbox.Text, out int qty) &&
         double.TryParse(discountAmountTxtbox.Text, out double discount_amount))
+                {
+                    double discounted_amount = (price * qty) - discount_amount;
+
+                    total_qty = qty; // not +=
+                    totalQtyTxtbox.Text = total_qty.ToString();
+
+                    total_amount = discounted_amount; // not +=
+                    totalBillsTxtbox.Text = total_amount.ToString("n");
+
+                    discountedAmountTxtbox.Text = discounted_amount.ToString("n");
+                }
+            }   
+                catch (Exception)
             {
-                double discounted_amount = (price * qty) - discount_amount;
-
-                total_qty = qty; // not +=
-                totalQtyTxtbox.Text = total_qty.ToString();
-
-                total_amount = discounted_amount; // not +=
-                totalBillsTxtbox.Text = total_amount.ToString("n");
-
-                discountedAmountTxtbox.Text = discounted_amount.ToString("n");
-
+                MessageBox.Show("Enter number of quantity order!");
+                qtyTxtbox.Focus();
             }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox1.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.AMWP1;
+            }
             double price;
 
             priceTxtBox.Text = "500.99";
@@ -227,6 +259,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox2.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.CWP;
+            }
             double price;
 
             priceTxtBox.Text = "550.99";
@@ -244,6 +280,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox3.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.CBD;
+            }
             double price;
 
             priceTxtBox.Text = "600.99";
@@ -261,6 +301,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox4.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.CAC;
+            }
             double price;
 
             priceTxtBox.Text = "700.59";
@@ -278,6 +322,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox5_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox5.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.CAC;
+            }
             double price;
 
             priceTxtBox.Text = "500.00";
@@ -295,6 +343,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox6_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox6.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.CAP;
+            }
             double price;
 
             priceTxtBox.Text = "750.00";
@@ -312,6 +364,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox7_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox7.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.COMBO;
+            }
             double price;
 
             priceTxtBox.Text = "700.00";
@@ -329,6 +385,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox8.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.CCP;
+            }
             double price;
 
             priceTxtBox.Text = "850.00";
@@ -346,6 +406,11 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox9_CheckedChanged(object sender, EventArgs e)
         {
+
+            if (checkBox9.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.GS;
+            }
             double price;
 
             priceTxtBox.Text = "450.00";
@@ -363,6 +428,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox10_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox10.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.GSP;
+            }
             double price;
 
             priceTxtBox.Text = "650.00";
@@ -380,6 +449,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox11_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox11.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.GARLIC_SHRIMP_AND_PEPPERONI_PIZZA_18inches;
+            }
             double price;
 
             priceTxtBox.Text = "575.00";
@@ -397,6 +470,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox12_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox12.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.HOLIDAY_PIZZA;
+            }
             double price;
 
             priceTxtBox.Text = "575.00";
@@ -414,6 +491,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox13_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox13.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.PEPPERONI_AND_CHEESE_PIZZA_18inches;
+            }
             double price;
 
             priceTxtBox.Text = "575.00";
@@ -431,6 +512,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox14_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox14.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.PEPPERONI_WHOLE_PIZZA_18inches;
+            }
             double price;
 
             priceTxtBox.Text = "575.00";
@@ -448,6 +533,10 @@ namespace OOP_LEGASPI_CPE201
 
         private void checkBox15_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox15.Checked)
+            {
+                DisplayPictureBox.Image = Properties.Resources.TROPICAL_HAWAIIAN_WHOLE_PIZZA_18inches;
+            }
             double price;
 
             priceTxtBox.Text = "575.00";
@@ -547,6 +636,11 @@ namespace OOP_LEGASPI_CPE201
 
             qtyTxtbox.Focus();
         }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
-    
+
 }

@@ -596,6 +596,7 @@
             tax_contribTxtbox.Name = "tax_contribTxtbox";
             tax_contribTxtbox.Size = new Size(201, 23);
             tax_contribTxtbox.TabIndex = 33;
+            tax_contribTxtbox.TextChanged += tax_contribTxtbox_TextChanged;
             // 
             // label20
             // 
@@ -736,6 +737,7 @@
             others_loanCombo.Name = "others_loanCombo";
             others_loanCombo.Size = new Size(230, 23);
             others_loanCombo.TabIndex = 43;
+            others_loanCombo.SelectedIndexChanged += others_loanCombo_SelectedIndexChanged;
             // 
             // label32
             // 

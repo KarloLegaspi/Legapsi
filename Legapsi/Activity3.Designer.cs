@@ -29,41 +29,41 @@
         private void InitializeComponent()
         {
             groupBox4 = new GroupBox();
-            label31 = new Label();
-            label32 = new Label();
-            label33 = new Label();
-            label34 = new Label();
-            label35 = new Label();
+            name16lbl = new Label();
+            name17lbl = new Label();
+            name18lbl = new Label();
+            name19lbl = new Label();
+            name20lbl = new Label();
             pictureBox17 = new PictureBox();
             pictureBox18 = new PictureBox();
             pictureBox19 = new PictureBox();
             pictureBox20 = new PictureBox();
             pictureBox21 = new PictureBox();
-            label26 = new Label();
-            label27 = new Label();
-            label28 = new Label();
-            label29 = new Label();
-            label30 = new Label();
+            name15lbl = new Label();
+            name14lbl = new Label();
+            name13lbl = new Label();
+            name12lbl = new Label();
+            name11lbl = new Label();
             pictureBox12 = new PictureBox();
             pictureBox13 = new PictureBox();
             pictureBox14 = new PictureBox();
             pictureBox15 = new PictureBox();
             pictureBox16 = new PictureBox();
-            label21 = new Label();
-            label22 = new Label();
-            label23 = new Label();
-            label24 = new Label();
-            label25 = new Label();
+            name10lbl = new Label();
+            name9lbl = new Label();
+            name8lbl = new Label();
+            name7lbl = new Label();
+            name6lbl = new Label();
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox9 = new PictureBox();
             pictureBox10 = new PictureBox();
             pictureBox11 = new PictureBox();
-            label20 = new Label();
-            label19 = new Label();
-            label18 = new Label();
-            label17 = new Label();
-            label16 = new Label();
+            name5lbl = new Label();
+            name4lbl = new Label();
+            name3lbl = new Label();
+            name2lbl = new Label();
+            name1lbl = new Label();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -89,41 +89,41 @@
             button7 = new Button();
             button5 = new Button();
             groupBox3 = new GroupBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            changetxtbox = new TextBox();
+            cashre_renderedtxtbox = new TextBox();
             label15 = new Label();
             label14 = new Label();
             groupBox2 = new GroupBox();
-            maskedTextBox8 = new MaskedTextBox();
-            label13 = new Label();
-            maskedTextBox7 = new MaskedTextBox();
-            label12 = new Label();
-            maskedTextBox6 = new MaskedTextBox();
-            label11 = new Label();
+            discounted_totaltxtbox = new MaskedTextBox();
+            discount_totaltxtbox = new MaskedTextBox();
+            Totaldscg = new Label();
+            qty_totaltxtbox = new MaskedTextBox();
+            totalqty = new Label();
             label10 = new Label();
             groupBox1 = new GroupBox();
-            radioButton4 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
+            regularRbtn = new RadioButton();
+            EmployeeRbtn = new RadioButton();
+            noTaxRbtn = new RadioButton();
             radioButton1 = new RadioButton();
             button3 = new Button();
             button4 = new Button();
             button2 = new Button();
             button1 = new Button();
-            maskedTextBox5 = new MaskedTextBox();
+            discountedtxtbox = new MaskedTextBox();
             label9 = new Label();
-            maskedTextBox2 = new MaskedTextBox();
+            discounttxtbox = new MaskedTextBox();
             label6 = new Label();
-            maskedTextBox3 = new MaskedTextBox();
+            pricetextbox = new MaskedTextBox();
             label7 = new Label();
-            maskedTextBox4 = new MaskedTextBox();
+            quantitytxtbox = new MaskedTextBox();
             label8 = new Label();
-            maskedTextBox1 = new MaskedTextBox();
+            itemnametxtbox = new MaskedTextBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            label11 = new Label();
             groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
@@ -153,41 +153,41 @@
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(label31);
-            groupBox4.Controls.Add(label32);
-            groupBox4.Controls.Add(label33);
-            groupBox4.Controls.Add(label34);
-            groupBox4.Controls.Add(label35);
+            groupBox4.Controls.Add(name16lbl);
+            groupBox4.Controls.Add(name17lbl);
+            groupBox4.Controls.Add(name18lbl);
+            groupBox4.Controls.Add(name19lbl);
+            groupBox4.Controls.Add(name20lbl);
             groupBox4.Controls.Add(pictureBox17);
             groupBox4.Controls.Add(pictureBox18);
             groupBox4.Controls.Add(pictureBox19);
             groupBox4.Controls.Add(pictureBox20);
             groupBox4.Controls.Add(pictureBox21);
-            groupBox4.Controls.Add(label26);
-            groupBox4.Controls.Add(label27);
-            groupBox4.Controls.Add(label28);
-            groupBox4.Controls.Add(label29);
-            groupBox4.Controls.Add(label30);
+            groupBox4.Controls.Add(name15lbl);
+            groupBox4.Controls.Add(name14lbl);
+            groupBox4.Controls.Add(name13lbl);
+            groupBox4.Controls.Add(name12lbl);
+            groupBox4.Controls.Add(name11lbl);
             groupBox4.Controls.Add(pictureBox12);
             groupBox4.Controls.Add(pictureBox13);
             groupBox4.Controls.Add(pictureBox14);
             groupBox4.Controls.Add(pictureBox15);
             groupBox4.Controls.Add(pictureBox16);
-            groupBox4.Controls.Add(label21);
-            groupBox4.Controls.Add(label22);
-            groupBox4.Controls.Add(label23);
-            groupBox4.Controls.Add(label24);
-            groupBox4.Controls.Add(label25);
+            groupBox4.Controls.Add(name10lbl);
+            groupBox4.Controls.Add(name9lbl);
+            groupBox4.Controls.Add(name8lbl);
+            groupBox4.Controls.Add(name7lbl);
+            groupBox4.Controls.Add(name6lbl);
             groupBox4.Controls.Add(pictureBox7);
             groupBox4.Controls.Add(pictureBox8);
             groupBox4.Controls.Add(pictureBox9);
             groupBox4.Controls.Add(pictureBox10);
             groupBox4.Controls.Add(pictureBox11);
-            groupBox4.Controls.Add(label20);
-            groupBox4.Controls.Add(label19);
-            groupBox4.Controls.Add(label18);
-            groupBox4.Controls.Add(label17);
-            groupBox4.Controls.Add(label16);
+            groupBox4.Controls.Add(name5lbl);
+            groupBox4.Controls.Add(name4lbl);
+            groupBox4.Controls.Add(name3lbl);
+            groupBox4.Controls.Add(name2lbl);
+            groupBox4.Controls.Add(name1lbl);
             groupBox4.Controls.Add(pictureBox6);
             groupBox4.Controls.Add(pictureBox5);
             groupBox4.Controls.Add(pictureBox4);
@@ -200,50 +200,50 @@
             groupBox4.TabIndex = 84;
             groupBox4.TabStop = false;
             // 
-            // label31
+            // name16lbl
             // 
-            label31.AutoSize = true;
-            label31.Location = new Point(630, 602);
-            label31.Name = "label31";
-            label31.Size = new Size(44, 15);
-            label31.TabIndex = 92;
-            label31.Text = "label12";
+            name16lbl.AutoSize = true;
+            name16lbl.Location = new Point(630, 602);
+            name16lbl.Name = "name16lbl";
+            name16lbl.Size = new Size(42, 15);
+            name16lbl.TabIndex = 92;
+            name16lbl.Text = "Name:";
             // 
-            // label32
+            // name17lbl
             // 
-            label32.AutoSize = true;
-            label32.Location = new Point(474, 602);
-            label32.Name = "label32";
-            label32.Size = new Size(44, 15);
-            label32.TabIndex = 91;
-            label32.Text = "label12";
+            name17lbl.AutoSize = true;
+            name17lbl.Location = new Point(474, 602);
+            name17lbl.Name = "name17lbl";
+            name17lbl.Size = new Size(42, 15);
+            name17lbl.TabIndex = 91;
+            name17lbl.Text = "Name:";
             // 
-            // label33
+            // name18lbl
             // 
-            label33.AutoSize = true;
-            label33.Location = new Point(318, 602);
-            label33.Name = "label33";
-            label33.Size = new Size(44, 15);
-            label33.TabIndex = 90;
-            label33.Text = "label12";
+            name18lbl.AutoSize = true;
+            name18lbl.Location = new Point(318, 602);
+            name18lbl.Name = "name18lbl";
+            name18lbl.Size = new Size(42, 15);
+            name18lbl.TabIndex = 90;
+            name18lbl.Text = "Name:";
             // 
-            // label34
+            // name19lbl
             // 
-            label34.AutoSize = true;
-            label34.Location = new Point(162, 602);
-            label34.Name = "label34";
-            label34.Size = new Size(44, 15);
-            label34.TabIndex = 89;
-            label34.Text = "label12";
+            name19lbl.AutoSize = true;
+            name19lbl.Location = new Point(162, 602);
+            name19lbl.Name = "name19lbl";
+            name19lbl.Size = new Size(42, 15);
+            name19lbl.TabIndex = 89;
+            name19lbl.Text = "Name:";
             // 
-            // label35
+            // name20lbl
             // 
-            label35.AutoSize = true;
-            label35.Location = new Point(6, 602);
-            label35.Name = "label35";
-            label35.Size = new Size(44, 15);
-            label35.TabIndex = 88;
-            label35.Text = "label12";
+            name20lbl.AutoSize = true;
+            name20lbl.Location = new Point(6, 602);
+            name20lbl.Name = "name20lbl";
+            name20lbl.Size = new Size(42, 15);
+            name20lbl.TabIndex = 88;
+            name20lbl.Text = "Name:";
             // 
             // pictureBox17
             // 
@@ -290,50 +290,50 @@
             pictureBox21.TabIndex = 83;
             pictureBox21.TabStop = false;
             // 
-            // label26
+            // name15lbl
             // 
-            label26.AutoSize = true;
-            label26.Location = new Point(630, 451);
-            label26.Name = "label26";
-            label26.Size = new Size(100, 15);
-            label26.TabIndex = 82;
-            label26.Text = "Tropical Hawaiian";
+            name15lbl.AutoSize = true;
+            name15lbl.Location = new Point(630, 451);
+            name15lbl.Name = "name15lbl";
+            name15lbl.Size = new Size(42, 15);
+            name15lbl.TabIndex = 82;
+            name15lbl.Text = "Name:";
             // 
-            // label27
+            // name14lbl
             // 
-            label27.AutoSize = true;
-            label27.Location = new Point(474, 451);
-            label27.Name = "label27";
-            label27.Size = new Size(125, 15);
-            label27.TabIndex = 81;
-            label27.Text = "Pepperoni whole pizza";
+            name14lbl.AutoSize = true;
+            name14lbl.Location = new Point(474, 451);
+            name14lbl.Name = "name14lbl";
+            name14lbl.Size = new Size(42, 15);
+            name14lbl.TabIndex = 81;
+            name14lbl.Text = "Name:";
             // 
-            // label28
+            // name13lbl
             // 
-            label28.AutoSize = true;
-            label28.Location = new Point(318, 451);
-            label28.Name = "label28";
-            label28.Size = new Size(125, 15);
-            label28.TabIndex = 80;
-            label28.Text = "Pepperoni and Cheese";
+            name13lbl.AutoSize = true;
+            name13lbl.Location = new Point(318, 451);
+            name13lbl.Name = "name13lbl";
+            name13lbl.Size = new Size(42, 15);
+            name13lbl.TabIndex = 80;
+            name13lbl.Text = "Name:";
             // 
-            // label29
+            // name12lbl
             // 
-            label29.AutoSize = true;
-            label29.Location = new Point(162, 451);
-            label29.Name = "label29";
-            label29.Size = new Size(77, 15);
-            label29.TabIndex = 79;
-            label29.Text = "Holiday Pizza";
+            name12lbl.AutoSize = true;
+            name12lbl.Location = new Point(162, 451);
+            name12lbl.Name = "name12lbl";
+            name12lbl.Size = new Size(42, 15);
+            name12lbl.TabIndex = 79;
+            name12lbl.Text = "Name:";
             // 
-            // label30
+            // name11lbl
             // 
-            label30.AutoSize = true;
-            label30.Location = new Point(6, 451);
-            label30.Name = "label30";
-            label30.Size = new Size(135, 15);
-            label30.TabIndex = 78;
-            label30.Text = "Garlic Shrimp Pepperoni";
+            name11lbl.AutoSize = true;
+            name11lbl.Location = new Point(6, 451);
+            name11lbl.Name = "name11lbl";
+            name11lbl.Size = new Size(42, 15);
+            name11lbl.TabIndex = 78;
+            name11lbl.Text = "Name:";
             // 
             // pictureBox12
             // 
@@ -344,6 +344,7 @@
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 77;
             pictureBox12.TabStop = false;
+            pictureBox12.Click += pictureBox12_Click;
             // 
             // pictureBox13
             // 
@@ -354,6 +355,7 @@
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox13.TabIndex = 76;
             pictureBox13.TabStop = false;
+            pictureBox13.Click += pictureBox13_Click;
             // 
             // pictureBox14
             // 
@@ -364,6 +366,7 @@
             pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox14.TabIndex = 75;
             pictureBox14.TabStop = false;
+            pictureBox14.Click += pictureBox14_Click;
             // 
             // pictureBox15
             // 
@@ -374,6 +377,7 @@
             pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox15.TabIndex = 74;
             pictureBox15.TabStop = false;
+            pictureBox15.Click += pictureBox15_Click;
             // 
             // pictureBox16
             // 
@@ -384,176 +388,186 @@
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 73;
             pictureBox16.TabStop = false;
+            pictureBox16.Click += pictureBox16_Click;
             // 
-            // label21
+            // name10lbl
             // 
-            label21.AutoSize = true;
-            label21.Location = new Point(630, 300);
-            label21.Name = "label21";
-            label21.Size = new Size(142, 15);
-            label21.TabIndex = 72;
-            label21.Text = "Garlic Shrimp and Cheese";
+            name10lbl.AutoSize = true;
+            name10lbl.Location = new Point(630, 300);
+            name10lbl.Name = "name10lbl";
+            name10lbl.Size = new Size(42, 15);
+            name10lbl.TabIndex = 72;
+            name10lbl.Text = "Name:";
             // 
-            // label22
+            // name9lbl
             // 
-            label22.AutoSize = true;
-            label22.Location = new Point(474, 300);
-            label22.Name = "label22";
-            label22.Size = new Size(101, 15);
-            label22.TabIndex = 71;
-            label22.Text = "Garlic and Shrimp";
+            name9lbl.AutoSize = true;
+            name9lbl.Location = new Point(474, 300);
+            name9lbl.Name = "name9lbl";
+            name9lbl.Size = new Size(42, 15);
+            name9lbl.TabIndex = 71;
+            name9lbl.Text = "Name:";
             // 
-            // label23
+            // name8lbl
             // 
-            label23.AutoSize = true;
-            label23.Location = new Point(318, 300);
-            label23.Name = "label23";
-            label23.Size = new Size(140, 15);
-            label23.TabIndex = 70;
-            label23.Text = "Cream Cheese Pepperoni";
+            name8lbl.AutoSize = true;
+            name8lbl.Location = new Point(318, 300);
+            name8lbl.Name = "name8lbl";
+            name8lbl.Size = new Size(42, 15);
+            name8lbl.TabIndex = 70;
+            name8lbl.Text = "Name:";
             // 
-            // label24
+            // name7lbl
             // 
-            label24.AutoSize = true;
-            label24.Location = new Point(162, 300);
-            label24.Name = "label24";
-            label24.Size = new Size(111, 15);
-            label24.TabIndex = 69;
-            label24.Text = "Combo whole pizza";
+            name7lbl.AutoSize = true;
+            name7lbl.Location = new Point(162, 300);
+            name7lbl.Name = "name7lbl";
+            name7lbl.Size = new Size(42, 15);
+            name7lbl.TabIndex = 69;
+            name7lbl.Text = "Name:";
             // 
-            // label25
+            // name6lbl
             // 
-            label25.AutoSize = true;
-            label25.Location = new Point(6, 300);
-            label25.Name = "label25";
-            label25.Size = new Size(127, 15);
-            label25.TabIndex = 68;
-            label25.Text = "Combo and Pepperoni";
+            name6lbl.AutoSize = true;
+            name6lbl.Location = new Point(6, 300);
+            name6lbl.Name = "name6lbl";
+            name6lbl.Size = new Size(42, 15);
+            name6lbl.TabIndex = 68;
+            name6lbl.Text = "Name:";
             // 
             // pictureBox7
             // 
-            pictureBox7.Image = Properties.Resources.GARLIC_SHRIMP_AND_CHEESE_PIZZA_18inches;
+            pictureBox7.Image = Properties.Resources.GSP;
             pictureBox7.Location = new Point(630, 167);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(150, 130);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 67;
             pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
             // pictureBox8
             // 
-            pictureBox8.Image = Properties.Resources.GARLIC_AND_SHRIMP_WHOLE_PIZZA_18inches;
+            pictureBox8.Image = Properties.Resources.GS;
             pictureBox8.Location = new Point(474, 167);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(150, 130);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 66;
             pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.CREAM_CHEESE_PEPPERONI_WHOLE_PIZZA_18inches;
+            pictureBox9.Image = Properties.Resources.CCP;
             pictureBox9.Location = new Point(318, 167);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(150, 130);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 65;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
             // 
             // pictureBox10
             // 
-            pictureBox10.Image = Properties.Resources.COMBO_WHOLE_PIZZA_18inches;
+            pictureBox10.Image = Properties.Resources.COMBO;
             pictureBox10.Location = new Point(162, 167);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(150, 130);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 64;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += pictureBox10_Click;
             // 
             // pictureBox11
             // 
-            pictureBox11.Image = Properties.Resources.COMBO_AND_PEPPERONI_PIZZA_18inches;
+            pictureBox11.Image = Properties.Resources.CAP;
             pictureBox11.Location = new Point(6, 167);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(150, 130);
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox11.TabIndex = 63;
             pictureBox11.TabStop = false;
+            pictureBox11.Click += pictureBox11_Click;
             // 
-            // label20
+            // name5lbl
             // 
-            label20.AutoSize = true;
-            label20.Location = new Point(630, 149);
-            label20.Name = "label20";
-            label20.Size = new Size(143, 15);
-            label20.TabIndex = 62;
-            label20.Text = "Combo and Garlic shrimp";
+            name5lbl.AutoSize = true;
+            name5lbl.Location = new Point(630, 149);
+            name5lbl.Name = "name5lbl";
+            name5lbl.Size = new Size(42, 15);
+            name5lbl.TabIndex = 62;
+            name5lbl.Text = "Name:";
             // 
-            // label19
+            // name4lbl
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(474, 149);
-            label19.Name = "label19";
-            label19.Size = new Size(140, 15);
-            label19.TabIndex = 61;
-            label19.Text = "Combo and Cheese pizza";
+            name4lbl.AutoSize = true;
+            name4lbl.Location = new Point(474, 149);
+            name4lbl.Name = "name4lbl";
+            name4lbl.Size = new Size(42, 15);
+            name4lbl.TabIndex = 61;
+            name4lbl.Text = "Name:";
             // 
-            // label18
+            // name3lbl
             // 
-            label18.AutoSize = true;
-            label18.Location = new Point(318, 149);
-            label18.Name = "label18";
-            label18.Size = new Size(151, 15);
-            label18.TabIndex = 60;
-            label18.Text = "Cheesy Burger Deluxe pizza";
+            name3lbl.AutoSize = true;
+            name3lbl.Location = new Point(318, 149);
+            name3lbl.Name = "name3lbl";
+            name3lbl.Size = new Size(42, 15);
+            name3lbl.TabIndex = 60;
+            name3lbl.Text = "Name:";
             // 
-            // label17
+            // name2lbl
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(162, 149);
-            label17.Name = "label17";
-            label17.Size = new Size(109, 15);
-            label17.TabIndex = 59;
-            label17.Text = "Cheese whole pizza";
+            name2lbl.AutoSize = true;
+            name2lbl.Location = new Point(162, 149);
+            name2lbl.Name = "name2lbl";
+            name2lbl.Size = new Size(42, 15);
+            name2lbl.TabIndex = 59;
+            name2lbl.Text = "Name:";
             // 
-            // label16
+            // name1lbl
             // 
-            label16.AutoSize = true;
-            label16.Location = new Point(6, 149);
-            label16.Name = "label16";
-            label16.Size = new Size(115, 15);
-            label16.TabIndex = 58;
-            label16.Text = "All Meat whole pizza";
+            name1lbl.AutoSize = true;
+            name1lbl.Location = new Point(6, 149);
+            name1lbl.Name = "name1lbl";
+            name1lbl.Size = new Size(42, 15);
+            name1lbl.TabIndex = 58;
+            name1lbl.Text = "Name:";
+            name1lbl.Click += name1lbl_Click;
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources.COMBO_AND_GARLIC_SHRIMP_PIZZA_18inches;
+            pictureBox6.Image = Properties.Resources.CGS;
             pictureBox6.Location = new Point(630, 16);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(150, 130);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 5;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.COMBO_AND_CHEESE_PIZZA_18inches;
+            pictureBox5.Image = Properties.Resources.CAC;
             pictureBox5.Location = new Point(474, 16);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(150, 130);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 4;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.CHEESY_BURGER_DELUXE_PIZZA_WHOLE_18inches;
+            pictureBox4.Image = Properties.Resources.CBD;
             pictureBox4.Location = new Point(318, 16);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(150, 130);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox3
             // 
@@ -566,23 +580,25 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.CHEESE_WHOLE_PIZZA_18inches;
+            pictureBox2.Image = Properties.Resources.CWP;
             pictureBox2.Location = new Point(162, 16);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(150, 130);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.ALL_MEAT_WHOLE_PIZZA_18inches1;
+            pictureBox1.Image = Properties.Resources.AMWP1;
             pictureBox1.Location = new Point(6, 16);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(150, 130);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // button21
             // 
@@ -766,8 +782,8 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(textBox2);
-            groupBox3.Controls.Add(textBox1);
+            groupBox3.Controls.Add(changetxtbox);
+            groupBox3.Controls.Add(cashre_renderedtxtbox);
             groupBox3.Controls.Add(label15);
             groupBox3.Controls.Add(label14);
             groupBox3.Location = new Point(86, 414);
@@ -776,21 +792,21 @@
             groupBox3.TabIndex = 65;
             groupBox3.TabStop = false;
             // 
-            // textBox2
+            // changetxtbox
             // 
-            textBox2.Location = new Point(190, 50);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(185, 50);
-            textBox2.TabIndex = 29;
+            changetxtbox.Location = new Point(190, 50);
+            changetxtbox.Multiline = true;
+            changetxtbox.Name = "changetxtbox";
+            changetxtbox.Size = new Size(185, 50);
+            changetxtbox.TabIndex = 29;
             // 
-            // textBox1
+            // cashre_renderedtxtbox
             // 
-            textBox1.Location = new Point(6, 50);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(178, 50);
-            textBox1.TabIndex = 8;
+            cashre_renderedtxtbox.Location = new Point(6, 50);
+            cashre_renderedtxtbox.Multiline = true;
+            cashre_renderedtxtbox.Name = "cashre_renderedtxtbox";
+            cashre_renderedtxtbox.Size = new Size(178, 50);
+            cashre_renderedtxtbox.TabIndex = 8;
             // 
             // label15
             // 
@@ -814,12 +830,12 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(maskedTextBox8);
-            groupBox2.Controls.Add(label13);
-            groupBox2.Controls.Add(maskedTextBox7);
-            groupBox2.Controls.Add(label12);
-            groupBox2.Controls.Add(maskedTextBox6);
             groupBox2.Controls.Add(label11);
+            groupBox2.Controls.Add(discounted_totaltxtbox);
+            groupBox2.Controls.Add(discount_totaltxtbox);
+            groupBox2.Controls.Add(Totaldscg);
+            groupBox2.Controls.Add(qty_totaltxtbox);
+            groupBox2.Controls.Add(totalqty);
             groupBox2.Location = new Point(86, 283);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(381, 125);
@@ -827,53 +843,45 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Summary";
             // 
-            // maskedTextBox8
+            // discounted_totaltxtbox
             // 
-            maskedTextBox8.Location = new Point(157, 85);
-            maskedTextBox8.Name = "maskedTextBox8";
-            maskedTextBox8.Size = new Size(218, 23);
-            maskedTextBox8.TabIndex = 26;
+            discounted_totaltxtbox.Location = new Point(157, 85);
+            discounted_totaltxtbox.Name = "discounted_totaltxtbox";
+            discounted_totaltxtbox.Size = new Size(218, 23);
+            discounted_totaltxtbox.TabIndex = 26;
             // 
-            // label13
+            // discount_totaltxtbox
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(6, 88);
-            label13.Name = "label13";
-            label13.Size = new Size(145, 15);
-            label13.TabIndex = 25;
-            label13.Text = "Total Discounted Amount:";
+            discount_totaltxtbox.Location = new Point(129, 56);
+            discount_totaltxtbox.Name = "discount_totaltxtbox";
+            discount_totaltxtbox.Size = new Size(246, 23);
+            discount_totaltxtbox.TabIndex = 24;
             // 
-            // maskedTextBox7
+            // Totaldscg
             // 
-            maskedTextBox7.Location = new Point(129, 56);
-            maskedTextBox7.Name = "maskedTextBox7";
-            maskedTextBox7.Size = new Size(246, 23);
-            maskedTextBox7.TabIndex = 24;
+            Totaldscg.AutoSize = true;
+            Totaldscg.Location = new Point(6, 59);
+            Totaldscg.Name = "Totaldscg";
+            Totaldscg.Size = new Size(118, 15);
+            Totaldscg.TabIndex = 23;
+            Totaldscg.Text = "Total Discount Given:";
             // 
-            // label12
+            // qty_totaltxtbox
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(6, 59);
-            label12.Name = "label12";
-            label12.Size = new Size(118, 15);
-            label12.TabIndex = 23;
-            label12.Text = "Total Discount Given:";
+            qty_totaltxtbox.Location = new Point(129, 27);
+            qty_totaltxtbox.Name = "qty_totaltxtbox";
+            qty_totaltxtbox.Size = new Size(246, 23);
+            qty_totaltxtbox.TabIndex = 22;
+            qty_totaltxtbox.MaskInputRejected += qty_totaltxtbox_MaskInputRejected;
             // 
-            // maskedTextBox6
+            // totalqty
             // 
-            maskedTextBox6.Location = new Point(129, 27);
-            maskedTextBox6.Name = "maskedTextBox6";
-            maskedTextBox6.Size = new Size(246, 23);
-            maskedTextBox6.TabIndex = 22;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(6, 30);
-            label11.Name = "label11";
-            label11.Size = new Size(84, 15);
-            label11.TabIndex = 0;
-            label11.Text = "Total Quantity:";
+            totalqty.AutoSize = true;
+            totalqty.Location = new Point(6, 30);
+            totalqty.Name = "totalqty";
+            totalqty.Size = new Size(84, 15);
+            totalqty.TabIndex = 0;
+            totalqty.Text = "Total Quantity:";
             // 
             // label10
             // 
@@ -885,23 +893,23 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(radioButton4);
-            groupBox1.Controls.Add(radioButton3);
-            groupBox1.Controls.Add(radioButton2);
+            groupBox1.Controls.Add(regularRbtn);
+            groupBox1.Controls.Add(EmployeeRbtn);
+            groupBox1.Controls.Add(noTaxRbtn);
             groupBox1.Controls.Add(radioButton1);
             groupBox1.Controls.Add(button3);
             groupBox1.Controls.Add(button4);
             groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(maskedTextBox5);
+            groupBox1.Controls.Add(discountedtxtbox);
             groupBox1.Controls.Add(label9);
-            groupBox1.Controls.Add(maskedTextBox2);
+            groupBox1.Controls.Add(discounttxtbox);
             groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(maskedTextBox3);
+            groupBox1.Controls.Add(pricetextbox);
             groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(maskedTextBox4);
+            groupBox1.Controls.Add(quantitytxtbox);
             groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(maskedTextBox1);
+            groupBox1.Controls.Add(itemnametxtbox);
             groupBox1.Controls.Add(label5);
             groupBox1.Location = new Point(86, 105);
             groupBox1.Name = "groupBox1";
@@ -909,38 +917,41 @@
             groupBox1.TabIndex = 62;
             groupBox1.TabStop = false;
             // 
-            // radioButton4
+            // regularRbtn
             // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(190, 133);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(91, 19);
-            radioButton4.TabIndex = 25;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "No Discount";
-            radioButton4.UseVisualStyleBackColor = true;
+            regularRbtn.AutoSize = true;
+            regularRbtn.Location = new Point(190, 133);
+            regularRbtn.Name = "regularRbtn";
+            regularRbtn.Size = new Size(91, 19);
+            regularRbtn.TabIndex = 25;
+            regularRbtn.TabStop = true;
+            regularRbtn.Text = "No Discount";
+            regularRbtn.UseVisualStyleBackColor = true;
+            regularRbtn.CheckedChanged += radioButton4_CheckedChanged;
             // 
-            // radioButton3
+            // EmployeeRbtn
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(190, 106);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(102, 19);
-            radioButton3.TabIndex = 24;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Employee Disc";
-            radioButton3.UseVisualStyleBackColor = true;
+            EmployeeRbtn.AutoSize = true;
+            EmployeeRbtn.Location = new Point(190, 106);
+            EmployeeRbtn.Name = "EmployeeRbtn";
+            EmployeeRbtn.Size = new Size(102, 19);
+            EmployeeRbtn.TabIndex = 24;
+            EmployeeRbtn.TabStop = true;
+            EmployeeRbtn.Text = "Employee Disc";
+            EmployeeRbtn.UseVisualStyleBackColor = true;
+            EmployeeRbtn.CheckedChanged += radioButton3_CheckedChanged_1;
             // 
-            // radioButton2
+            // noTaxRbtn
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(190, 78);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(103, 19);
-            radioButton2.TabIndex = 23;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "With Disc Card";
-            radioButton2.UseVisualStyleBackColor = true;
+            noTaxRbtn.AutoSize = true;
+            noTaxRbtn.Location = new Point(190, 78);
+            noTaxRbtn.Name = "noTaxRbtn";
+            noTaxRbtn.Size = new Size(103, 19);
+            noTaxRbtn.TabIndex = 23;
+            noTaxRbtn.TabStop = true;
+            noTaxRbtn.Text = "With Disc Card";
+            noTaxRbtn.UseVisualStyleBackColor = true;
+            noTaxRbtn.CheckedChanged += radioButton2_CheckedChanged_1;
             // 
             // radioButton1
             // 
@@ -963,6 +974,7 @@
             button3.TabIndex = 21;
             button3.Text = "EXIT";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -983,6 +995,7 @@
             button2.TabIndex = 19;
             button2.Text = "NEW";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -993,13 +1006,14 @@
             button1.TabIndex = 5;
             button1.Text = "CALCULATE";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // maskedTextBox5
+            // discountedtxtbox
             // 
-            maskedTextBox5.Location = new Point(129, 132);
-            maskedTextBox5.Name = "maskedTextBox5";
-            maskedTextBox5.Size = new Size(55, 23);
-            maskedTextBox5.TabIndex = 18;
+            discountedtxtbox.Location = new Point(129, 132);
+            discountedtxtbox.Name = "discountedtxtbox";
+            discountedtxtbox.Size = new Size(55, 23);
+            discountedtxtbox.TabIndex = 18;
             // 
             // label9
             // 
@@ -1010,12 +1024,12 @@
             label9.TabIndex = 17;
             label9.Text = "Discounted Amount:";
             // 
-            // maskedTextBox2
+            // discounttxtbox
             // 
-            maskedTextBox2.Location = new Point(129, 103);
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(55, 23);
-            maskedTextBox2.TabIndex = 16;
+            discounttxtbox.Location = new Point(129, 103);
+            discounttxtbox.Name = "discounttxtbox";
+            discounttxtbox.Size = new Size(55, 23);
+            discounttxtbox.TabIndex = 16;
             // 
             // label6
             // 
@@ -1026,12 +1040,12 @@
             label6.TabIndex = 15;
             label6.Text = "Discount Amount:";
             // 
-            // maskedTextBox3
+            // pricetextbox
             // 
-            maskedTextBox3.Location = new Point(129, 74);
-            maskedTextBox3.Name = "maskedTextBox3";
-            maskedTextBox3.Size = new Size(55, 23);
-            maskedTextBox3.TabIndex = 14;
+            pricetextbox.Location = new Point(129, 74);
+            pricetextbox.Name = "pricetextbox";
+            pricetextbox.Size = new Size(55, 23);
+            pricetextbox.TabIndex = 14;
             // 
             // label7
             // 
@@ -1042,12 +1056,12 @@
             label7.TabIndex = 13;
             label7.Text = "Price:";
             // 
-            // maskedTextBox4
+            // quantitytxtbox
             // 
-            maskedTextBox4.Location = new Point(129, 45);
-            maskedTextBox4.Name = "maskedTextBox4";
-            maskedTextBox4.Size = new Size(55, 23);
-            maskedTextBox4.TabIndex = 12;
+            quantitytxtbox.Location = new Point(129, 45);
+            quantitytxtbox.Name = "quantitytxtbox";
+            quantitytxtbox.Size = new Size(55, 23);
+            quantitytxtbox.TabIndex = 12;
             // 
             // label8
             // 
@@ -1058,12 +1072,12 @@
             label8.TabIndex = 11;
             label8.Text = "Quantity:";
             // 
-            // maskedTextBox1
+            // itemnametxtbox
             // 
-            maskedTextBox1.Location = new Point(129, 16);
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(246, 23);
-            maskedTextBox1.TabIndex = 6;
+            itemnametxtbox.Location = new Point(129, 16);
+            itemnametxtbox.Name = "itemnametxtbox";
+            itemnametxtbox.Size = new Size(246, 23);
+            itemnametxtbox.TabIndex = 6;
             // 
             // label5
             // 
@@ -1111,6 +1125,15 @@
             label1.TabIndex = 58;
             label1.Text = "Pizza ni Karlo Legaspi";
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(6, 88);
+            label11.Name = "label11";
+            label11.Size = new Size(131, 15);
+            label11.TabIndex = 27;
+            label11.Text = "Total Discounted Given:";
+            // 
             // Activity3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1146,6 +1169,7 @@
             Controls.Add(label1);
             Name = "Activity3";
             Text = "Activity3";
+            Load += Activity3_Load;
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
@@ -1182,41 +1206,41 @@
         #endregion
 
         private GroupBox groupBox4;
-        private Label label31;
-        private Label label32;
-        private Label label33;
-        private Label label34;
-        private Label label35;
+        private Label name16lbl;
+        private Label name17lbl;
+        private Label name18lbl;
+        private Label name19lbl;
+        private Label name20lbl;
         private PictureBox pictureBox17;
         private PictureBox pictureBox18;
         private PictureBox pictureBox19;
         private PictureBox pictureBox20;
         private PictureBox pictureBox21;
-        private Label label26;
-        private Label label27;
-        private Label label28;
-        private Label label29;
-        private Label label30;
+        private Label name15lbl;
+        private Label name14lbl;
+        private Label name13lbl;
+        private Label name12lbl;
+        private Label name11lbl;
         private PictureBox pictureBox12;
         private PictureBox pictureBox13;
         private PictureBox pictureBox14;
         private PictureBox pictureBox15;
         private PictureBox pictureBox16;
-        private Label label21;
-        private Label label22;
-        private Label label23;
-        private Label label24;
-        private Label label25;
+        private Label name10lbl;
+        private Label name9lbl;
+        private Label name8lbl;
+        private Label name7lbl;
+        private Label name6lbl;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
         private PictureBox pictureBox9;
         private PictureBox pictureBox10;
         private PictureBox pictureBox11;
-        private Label label20;
-        private Label label19;
-        private Label label18;
-        private Label label17;
-        private Label label16;
+        private Label name5lbl;
+        private Label name4lbl;
+        private Label name3lbl;
+        private Label name2lbl;
+        private Label name1lbl;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
@@ -1242,40 +1266,41 @@
         private Button button7;
         private Button button5;
         private GroupBox groupBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox changetxtbox;
+        private TextBox cashre_renderedtxtbox;
         private Label label15;
         private Label label14;
         private GroupBox groupBox2;
-        private MaskedTextBox maskedTextBox8;
-        private Label label13;
-        private MaskedTextBox maskedTextBox7;
-        private Label label12;
-        private MaskedTextBox maskedTextBox6;
-        private Label label11;
+        private MaskedTextBox discounted_totaltxtbox;
+        //private Label discounted_total;
+        private MaskedTextBox discount_totaltxtbox;
+        private Label Totaldscg;
+        private MaskedTextBox qty_totaltxtbox;
+        private Label totalqty;
         private Label label10;
         private GroupBox groupBox1;
         private Button button3;
         private Button button4;
         private Button button2;
         private Button button1;
-        private MaskedTextBox maskedTextBox5;
+        private MaskedTextBox discountedtxtbox;
         private Label label9;
-        private MaskedTextBox maskedTextBox2;
+        private MaskedTextBox discounttxtbox;
         private Label label6;
-        private MaskedTextBox maskedTextBox3;
+        private MaskedTextBox pricetextbox;
         private Label label7;
-        private MaskedTextBox maskedTextBox4;
+        private MaskedTextBox quantitytxtbox;
         private Label label8;
-        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox itemnametxtbox;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
         private RadioButton radioButton1;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
+        private RadioButton regularRbtn;
+        private RadioButton EmployeeRbtn;
+        private RadioButton noTaxRbtn;
+        private Label label11;
     }
 }

@@ -63,9 +63,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ALL_MEAT_WHOLE_PIZZA_18inches {
+        internal static System.Drawing.Bitmap AMWP {
             get {
-                object obj = ResourceManager.GetObject("ALL MEAT WHOLE PIZZA 18inches", resourceCulture);
+                object obj = ResourceManager.GetObject("AMWP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ALL_MEAT_WHOLE_PIZZA_18inches1 {
+        internal static System.Drawing.Bitmap AMWP1 {
             get {
-                object obj = ResourceManager.GetObject("ALL MEAT WHOLE PIZZA 18inches1", resourceCulture);
+                object obj = ResourceManager.GetObject("AMWP1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CHEESE_WHOLE_PIZZA_18inches {
+        internal static System.Drawing.Bitmap BUNDLE_A {
             get {
-                object obj = ResourceManager.GetObject("CHEESE WHOLE PIZZA 18inches", resourceCulture);
+                object obj = ResourceManager.GetObject("BUNDLE_A", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CHEESY_BURGER_DELUXE_PIZZA_WHOLE_18inches {
+        internal static System.Drawing.Bitmap BUNDLE_B {
             get {
-                object obj = ResourceManager.GetObject("CHEESY BURGER DELUXE PIZZA WHOLE 18inches", resourceCulture);
+                object obj = ResourceManager.GetObject("BUNDLE_B", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap COMBO_AND_CHEESE_PIZZA_18inches {
+        internal static System.Drawing.Bitmap CAC {
             get {
-                object obj = ResourceManager.GetObject("COMBO AND CHEESE PIZZA 18inches", resourceCulture);
+                object obj = ResourceManager.GetObject("CAC", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap COMBO_AND_GARLIC_SHRIMP_PIZZA_18inches {
+        internal static System.Drawing.Bitmap CAP {
             get {
-                object obj = ResourceManager.GetObject("COMBO AND GARLIC SHRIMP PIZZA 18inches", resourceCulture);
+                object obj = ResourceManager.GetObject("CAP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap COMBO_AND_PEPPERONI_PIZZA_18inches {
+        internal static System.Drawing.Bitmap CBD {
             get {
-                object obj = ResourceManager.GetObject("COMBO AND PEPPERONI PIZZA 18inches", resourceCulture);
+                object obj = ResourceManager.GetObject("CBD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap COMBO_WHOLE_PIZZA_18inches {
+        internal static System.Drawing.Bitmap CCP {
             get {
-                object obj = ResourceManager.GetObject("COMBO WHOLE PIZZA 18inches", resourceCulture);
+                object obj = ResourceManager.GetObject("CCP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CREAM_CHEESE_PEPPERONI_WHOLE_PIZZA_18inches {
+        internal static System.Drawing.Bitmap CGS {
             get {
-                object obj = ResourceManager.GetObject("CREAM-CHEESE PEPPERONI WHOLE PIZZA 18inches", resourceCulture);
+                object obj = ResourceManager.GetObject("CGS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GARLIC_AND_SHRIMP_WHOLE_PIZZA_18inches {
+        internal static System.Drawing.Bitmap COMBO {
             get {
-                object obj = ResourceManager.GetObject("GARLIC AND SHRIMP WHOLE PIZZA 18inches", resourceCulture);
+                object obj = ResourceManager.GetObject("COMBO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace OOP_LEGASPI_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GARLIC_SHRIMP_AND_CHEESE_PIZZA_18inches {
+        internal static System.Drawing.Bitmap CWP {
             get {
-                object obj = ResourceManager.GetObject("GARLIC SHRIMP AND CHEESE PIZZA 18inches", resourceCulture);
+                object obj = ResourceManager.GetObject("CWP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +176,26 @@ namespace OOP_LEGASPI_CPE201.Properties {
         internal static System.Drawing.Bitmap GARLIC_SHRIMP_AND_PEPPERONI_PIZZA_18inches {
             get {
                 object obj = ResourceManager.GetObject("GARLIC SHRIMP AND PEPPERONI PIZZA 18inches", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GS {
+            get {
+                object obj = ResourceManager.GetObject("GS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GSP {
+            get {
+                object obj = ResourceManager.GetObject("GSP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

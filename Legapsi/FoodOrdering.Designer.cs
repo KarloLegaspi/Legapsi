@@ -499,7 +499,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.ALL_MEAT_WHOLE_PIZZA_18inches1;
+            pictureBox1.Image = Properties.Resources.AMWP1;
             pictureBox1.Location = new Point(6, 16);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(150, 130);
@@ -509,7 +509,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.CHEESE_WHOLE_PIZZA_18inches;
+            pictureBox2.Image = Properties.Resources.CWP;
             pictureBox2.Location = new Point(162, 16);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(150, 130);
@@ -528,7 +528,7 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.CHEESY_BURGER_DELUXE_PIZZA_WHOLE_18inches;
+            pictureBox4.Image = Properties.Resources.CBD;
             pictureBox4.Location = new Point(318, 16);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(150, 130);
@@ -538,7 +538,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.COMBO_AND_CHEESE_PIZZA_18inches;
+            pictureBox5.Image = Properties.Resources.CAC;
             pictureBox5.Location = new Point(474, 16);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(150, 130);
@@ -548,7 +548,7 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources.COMBO_AND_GARLIC_SHRIMP_PIZZA_18inches;
+            pictureBox6.Image = Properties.Resources.CGS;
             pictureBox6.Location = new Point(630, 16);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(150, 130);
