@@ -24,36 +24,42 @@ namespace OOP_LEGASPI_CPE201
 
         private void FoodOrdering_Load(object sender, EventArgs e)
         {
-            priceTxtBox.Enabled = false;
-            discountedAmountTxtbox.Enabled = false;
-            changeTxtbox.Enabled = false;
-            totalBillsTxtbox.Enabled = false;
-            discountAmountTxtbox.Enabled = false;
-            totalQtyTxtbox.Enabled = false;
+            try
+            {
+                priceTxtBox.Enabled = false;
+                discountedAmountTxtbox.Enabled = false;
+                changeTxtbox.Enabled = false;
+                totalBillsTxtbox.Enabled = false;
+                discountAmountTxtbox.Enabled = false;
+                totalQtyTxtbox.Enabled = false;
 
-            Combo_and_Pepperoni.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\COMBO AND PEPPERONI PIZZA 18inches.jpg");
-            Combo_whole_pizza.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\COMBO WHOLE PIZZA 18inches.jpg");
-            Cream_Cheese_Pepperoni.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\CREAM-CHEESE PEPPERONI WHOLE PIZZA 18inches.jpg");
-            Garlic_and_Shrimp.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\GARLIC AND SHRIMP WHOLE PIZZA 18inches.jpg");
-            Garlic_Shrimp_and_Cheese.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\GARLIC SHRIMP AND CHEESE PIZZA 18inches.jpg");
-            Garlic_Shrimp_Pepperoni.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\GARLIC SHRIMP AND PEPPERONI PIZZA 18inches.jpg");
-            Holiday_Pizza.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\HOLIDAY PIZZA.jpg");
-            Pepperoni_and_Cheese.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\PEPPERONI AND CHEESE PIZZA 18inches.png");
-            Pepperoni_whole_pizza.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\PEPPERONI WHOLE PIZZA 18inches.jpg");
-            Tropical_Hawaiian.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\TROPICAL HAWAIIAN WHOLE PIZZA 18inches.jpg");
-            //BUNDLE_A
-            A_CokeCheckBox.Enabled = false;
-            A_FriedChickencheckBox.Enabled = false;
-            A_FriescheckBox.Enabled = false;
-            A_sideDishCheckBox.Enabled = false;
-            A_SpecialPizaCheckbox.Enabled = false;
-            //BUNDLE_B
-            B_carbonaracheckBox.Enabled = false;
-            B_ChickencheckBox.Enabled = false;
-            B_FriescheckBox.Enabled = false;
-            B_halohalocheckBox.Enabled = false;
-            B_HawaiiancheckBox.Enabled = false;
-
+                Combo_and_Pepperoni.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\COMBO AND PEPPERONI PIZZA 18inches.jpg");
+                Combo_whole_pizza.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\COMBO WHOLE PIZZA 18inches.jpg");
+                Cream_Cheese_Pepperoni.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\CREAM-CHEESE PEPPERONI WHOLE PIZZA 18inches.jpg");
+                Garlic_and_Shrimp.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\GARLIC AND SHRIMP WHOLE PIZZA 18inches.jpg");
+                Garlic_Shrimp_and_Cheese.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\GARLIC SHRIMP AND CHEESE PIZZA 18inches.jpg");
+                Garlic_Shrimp_Pepperoni.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\GARLIC SHRIMP AND PEPPERONI PIZZA 18inches.jpg");
+                Holiday_Pizza.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\HOLIDAY PIZZA.jpg");
+                Pepperoni_and_Cheese.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\PEPPERONI AND CHEESE PIZZA 18inches.png");
+                Pepperoni_whole_pizza.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\PEPPERONI WHOLE PIZZA 18inches.jpg");
+                Tropical_Hawaiian.Image = Image.FromFile("C:\\Legapsi\\Legapsi\\Resources\\TROPICAL HAWAIIAN WHOLE PIZZA 18inches.jpg");
+                //BUNDLE_A
+                A_CokeCheckBox.Enabled = false;
+                A_FriedChickencheckBox.Enabled = false;
+                A_FriescheckBox.Enabled = false;
+                A_sideDishCheckBox.Enabled = false;
+                A_SpecialPizaCheckbox.Enabled = false;
+                //BUNDLE_B
+                B_carbonaracheckBox.Enabled = false;
+                B_ChickencheckBox.Enabled = false;
+                B_FriescheckBox.Enabled = false;
+                B_halohalocheckBox.Enabled = false;
+                B_HawaiiancheckBox.Enabled = false;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROR!");
+            }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

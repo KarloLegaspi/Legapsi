@@ -10,22 +10,24 @@ using System.Windows.Forms;
 
 namespace OOP_LEGASPI_CPE201
 {
-    public partial class TransactionPrint : Form
+    public partial class Example5Print : Form
     {
-
-        public TransactionPrint()
+        public Example5Print()
         {
             InitializeComponent();
-            receiptList.Font = new Font("Consolas", 8);
-            receiptList.HorizontalScrollbar = true;
         }
 
-        private void receiptList_SelectedIndexChanged(object sender, EventArgs e)
+        private void priDisplayListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void TransactionPrint_Load(object sender, EventArgs e)
+        private void Example5Prnt_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void priDisplayListBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
