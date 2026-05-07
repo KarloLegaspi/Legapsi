@@ -11,7 +11,7 @@ namespace Legapsi
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Example4());
+            Application.Run(new Lesson3_Example2_Methods());
             
 
         }
